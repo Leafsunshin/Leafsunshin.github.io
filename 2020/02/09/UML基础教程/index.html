@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>UML基础教程 | Hexo</title>
+  
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>许东明的blog</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-home fa-fw'></i>&nbsp;主页
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;订阅
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Hexo
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogcategories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogtags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogarchives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/blog/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="blogarchives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                  rel="nofollow"
+                
+                
+                id="home">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2020/02/09/UML%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+        UML基础教程
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yoursite.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>John Doe</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-02-09</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item wordcount">
+      <a class='notlink'>
+        <i class="fas fa-keyboard" aria-hidden="true"></i>
+        <p>字数统计:</p>
+        <p>5.9k字</p>
+      </a>
+    </div>
+    <div class="new-meta-item readtime">
+      <a class='notlink'>
+        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+        <p>阅读时长≈</p>
+        <p>21分</p>
+      </a>
+    </div>
+  
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <h1 id="UML基础教程"><a href="#UML基础教程" class="headerlink" title="UML基础教程"></a>UML基础教程</h1><blockquote>
+<p>作者：许东明<br>邮件：leafsunshin<a href="">@163.com </a><br>最近更新时间：2019/9/9</p>
+</blockquote>
+<h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><blockquote>
+<p>对UML1.5各种模型图的构成和功能进行说明</p>
+</blockquote>
+<h2 id="1-1UML概述"><a href="#1-1UML概述" class="headerlink" title="1.1UML概述"></a>1.1UML概述</h2><h3 id="1-1-1UML简介"><a href="#1-1-1UML简介" class="headerlink" title="1.1.1UML简介"></a>1.1.1UML简介</h3><ul>
+<li>UML (Unified Modeling Language)为面向对象软件设计提供统一的、标准的、可视化的建模语言。适用于描述以用例为驱动，以体系结构为中心的软件设计的全过程。</li>
+<li>UML的定义包括UML语义和UML表示法两个部分。</li>
+</ul>
+<ol>
+<li><strong>UML语义</strong>：UML对语义的描述使开发者能在语义上取得一致认识，消除了因人而异的表达方法所造成的影响。</li>
+<li><strong>UML表示法</strong>：UML表示法定义UML符号的表示法，为开发者或开发工具使用这些图形符号和文本语法为系统建模提供了标准。</li>
+</ol>
+<h3 id="1-1-2UML模型图的构成"><a href="#1-1-2UML模型图的构成" class="headerlink" title="1.1.2UML模型图的构成"></a>1.1.2UML模型图的构成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.事物(Things)：UML模型中最基本的构成元素，是具有代表性的成分的抽象</span><br><span class="line">2.关系(Relationships)：关系把事物紧密联系在一起</span><br><span class="line">3.图(Diagrams )：图是事物和关系的可视化表示</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2UML事物"><a href="#1-2UML事物" class="headerlink" title="1.2UML事物"></a>1.2UML事物</h2><blockquote>
+<p>UML包含4种事物：<strong>构件事物</strong>、<strong>行为事物</strong>、<strong>分组事物</strong>、<strong>注释事物</strong></p>
+</blockquote>
+<h3 id="1-2-1构件事物"><a href="#1-2-1构件事物" class="headerlink" title="1.2.1构件事物"></a>1.2.1构件事物</h3><blockquote>
+<p>UML模型的静态部分，描述概念或物理元素</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">他包含以下几种：</span><br><span class="line">   1.类：具有相同属性相同操作 相同关系相同语义的对象的描述</span><br><span class="line">   2.接口：描述元素的外部可见行为，即服务集合的定义说明</span><br><span class="line">   3.协作：描述了一组事物间的相互作用的集合</span><br><span class="line">   4.用例：代表一个系统或系统的一部分行为，是一组动作序列的集合</span><br><span class="line">   5.构件：系统中物理存在，可替换的部件</span><br><span class="line">   6.节点：运行时存在的物理元素</span><br><span class="line">   另外，参与者、信号应用、文档库、页表等都是上述基本事物的变体</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-2行为事物"><a href="#1-2-2行为事物" class="headerlink" title="1.2.2行为事物"></a>1.2.2行为事物</h3><blockquote>
+<p>UML模型图的动态部分，描述跨越空间和时间的行为</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">交互：实现某功能的一组构件事物之间的消息的集合，涉及消息、动作序列、链接</span><br><span class="line">状态机：描述事物或交互在生命周期内响应事件所经历的状态序</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-3分组事物"><a href="#1-2-3分组事物" class="headerlink" title="1.2.3分组事物"></a>1.2.3分组事物</h3><blockquote>
+<p>UML模型图的组织部分，描述事物的组织结构</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">包：把元素组织成组的机制</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-4注释事物"><a href="#1-2-4注释事物" class="headerlink" title="1.2.4注释事物"></a>1.2.4注释事物</h3><blockquote>
+<p>UML模型的解释部分，用来对模型中的元素进行说明，解释</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注解：对元素进行约束或解释的简单符号</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3UML关系"><a href="#1-3UML关系" class="headerlink" title="1.3UML关系"></a>1.3UML关系</h2><h3 id="1-3-1依赖"><a href="#1-3-1依赖" class="headerlink" title="1.3.1依赖"></a>1.3.1依赖</h3><blockquote>
+<p>依赖(dependency)是两个事物之间的语义关系，其中一个事物(独立事物)发生变化，会影响到另一个事物(依赖事物)的语义</p>
+</blockquote>
+<h3 id="1-3-2关联"><a href="#1-3-2关联" class="headerlink" title="1.3.2关联"></a>1.3.2关联</h3><blockquote>
+<p>关联(association)是一种结构关系，它指明一个事物的对象与另一个事物的对象间的联系</p>
+</blockquote>
+<h3 id="1-3-3泛化"><a href="#1-3-3泛化" class="headerlink" title="1.3.3泛化"></a>1.3.3泛化</h3><blockquote>
+<p>泛化(generalization)是一种特殊/一般的关系。也可以看作是常说的继承关系</p>
+</blockquote>
+<h3 id="1-3-4实现"><a href="#1-3-4实现" class="headerlink" title="1.3.4实现"></a>1.3.4实现</h3><blockquote>
+<p>实现(realization)是类元之间的语义关系，其中的一个类元指定了由另一个类元保证执行的契约</p>
+</blockquote>
+<h2 id="1-4各UML图及特征"><a href="#1-4各UML图及特征" class="headerlink" title="1.4各UML图及特征"></a>1.4各UML图及特征</h2><h3 id="1-4-1-用例图-Use-Case-Diagram"><a href="#1-4-1-用例图-Use-Case-Diagram" class="headerlink" title="1.4.1 用例图( Use Case Diagram )"></a>1.4.1 用例图( Use Case Diagram )</h3><blockquote>
+<p>用例图是从用户角度描述系统功能， 是用户所能观察到的系统功能的模型图，用例是系统中的一个功能单元</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906186-be476c3d-3197-4eee-82f1-8961a70ab0a0.jpeg#align=left&display=inline&height=664&originHeight=664&originWidth=714&size=0&status=done&style=none&width=714" alt=""></p>
+<h3 id="1-4-2-类图-Class-Diagram"><a href="#1-4-2-类图-Class-Diagram" class="headerlink" title="1.4.2 类图(Class Diagram)"></a>1.4.2 类图(Class Diagram)</h3><blockquote>
+<ol>
+<li>类图描述系统中类的静态结构。不仅定义系统中的类，表示类之间的联系如关联、依赖、聚合等，也包括类的内部结构(类的属性和操作)</li>
+<li>类图是以类为中心来组织的，类图中的其他元素或属于某个类或与类相关联</li>
+</ol>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906214-347d0e20-14d8-4825-a1bb-2c6f01720fa2.jpeg#align=left&display=inline&height=684&originHeight=684&originWidth=1061&size=0&status=done&style=none&width=1061" alt=""></p>
+<h3 id="1-4-3对象图-Object-Diagram"><a href="#1-4-3对象图-Object-Diagram" class="headerlink" title="1.4.3对象图( Object Diagram )"></a>1.4.3对象图( Object Diagram )</h3><blockquote>
+<p>对象图是类图的实例，几乎使用与类图完全相同的标识。他们的不同点在于对象图显示类的多个对象实例，而不是实际的类</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906306-3fc462ab-f5a2-4621-878f-96dbd1cb784a.jpeg#align=left&display=inline&height=556&originHeight=556&originWidth=977&size=0&status=done&style=none&width=977" alt=""></p>
+<h3 id="1-4-4-顺序图-Sequence-Diagram"><a href="#1-4-4-顺序图-Sequence-Diagram" class="headerlink" title="1.4.4 顺序图(Sequence Diagram)"></a>1.4.4 顺序图(Sequence Diagram)</h3><blockquote>
+<ol>
+<li>顺序图显示对象之间的动态合作关系，它强调对象之间消息发送的顺序，同时显示对象之间的交互</li>
+<li>顺序图的一个用途是用来表示用例中的行为顺序。当执行一个用例行为时，顺序图中的每条消息对应了一个类操作或引起状态转换的触发事件</li>
+</ol>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906271-b334bfb3-7ea9-45b6-ae43-ab3cd5fb1a6e.jpeg#align=left&display=inline&height=779&originHeight=779&originWidth=1056&size=0&status=done&style=none&width=1056" alt=""></p>
+<h3 id="1-4-5协作图-Collaboration-Diagram"><a href="#1-4-5协作图-Collaboration-Diagram" class="headerlink" title="1.4.5协作图(Collaboration Diagram)"></a>1.4.5协作图(Collaboration Diagram)</h3><blockquote>
+<ol>
+<li>协作图描述对象间的协作关系，协作图跟顺序图 相似，显示对象间的动态合作关系。除显示信息交换外，协作图还显示对象以及它们之间的关系.</li>
+<li>协作图的一个用途是表示一个类操作的实现</li>
+</ol>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906242-7dcea228-60ee-49c9-a499-aa6bba430988.jpeg#align=left&display=inline&height=514&originHeight=514&originWidth=1059&size=0&status=done&style=none&width=1059" alt=""></p>
+<h3 id="1-4-6-状态图-State-Chart-Diagram"><a href="#1-4-6-状态图-State-Chart-Diagram" class="headerlink" title="1.4.6 状态图(State Chart Diagram)"></a>1.4.6 状态图(State Chart Diagram)</h3><blockquote>
+<p>状态图是一个类对象所可能经历的所有历程的模型图。状态图由对象的各个状态和连接这些状态的转换组成</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906277-b8642669-933f-4120-97b3-5e250cc88232.jpeg#align=left&display=inline&height=609&originHeight=609&originWidth=988&size=0&status=done&style=none&width=988" alt=""></p>
+<h3 id="1-4-7-活动图-Activity-Diagram"><a href="#1-4-7-活动图-Activity-Diagram" class="headerlink" title="1.4.7 活动图(Activity Diagram)"></a>1.4.7 活动图(Activity Diagram)</h3><blockquote>
+<ol>
+<li>活动图是状态图的一个变体，用来描述执行算法的工作流程中涉及的活动</li>
+<li>活动图描述了一组顺序的或并发的活动</li>
+</ol>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906284-b0fd3a49-7194-4cd4-8190-8bc83b6efa1e.jpeg#align=left&display=inline&height=856&originHeight=856&originWidth=958&size=0&status=done&style=none&width=958" alt=""></p>
+<h3 id="1-4-8-构件图-Component-Diagram"><a href="#1-4-8-构件图-Component-Diagram" class="headerlink" title="1.4.8 构件图(Component Diagram)"></a>1.4.8 构件图(Component Diagram)</h3><blockquote>
+<p>构件图为系统的构件建模型—构件即构造应用的软件单元—还包括各构件之间的依赖关系，以便通过这些依赖关系来估计对系统构件的修改给系统可能带来的影响</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906293-c5a8f17e-bb09-45d7-8ed9-96d65a0f9dd2.jpeg#align=left&display=inline&height=465&originHeight=465&originWidth=959&size=0&status=done&style=none&width=959" alt=""></p>
+<h3 id="1-4-9-部署图-Deployment-Diagram"><a href="#1-4-9-部署图-Deployment-Diagram" class="headerlink" title="1.4.9 部署图(Deployment Diagram)"></a>1.4.9 部署图(Deployment Diagram)</h3><blockquote>
+<p>部署视图描述位于节点实例上的运行构件实例的安排。节点是一组运行资源，如计算机、设备或存储器。这个视图允许评估分配结果和资源分配</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906261-feba32d0-1766-46f9-81f5-f0bbfccef10e.jpeg#align=left&display=inline&height=697&originHeight=697&originWidth=922&size=0&status=done&style=none&width=922" alt=""></p>
+<h2 id="1-5各UML图的关系"><a href="#1-5各UML图的关系" class="headerlink" title="1.5各UML图的关系"></a>1.5各UML图的关系</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/png/507188/1576578906252-cffcf5a6-90e0-4b02-a747-b6e8cde80f92.png#align=left&display=inline&height=395&originHeight=395&originWidth=633&size=0&status=done&style=none&width=633" alt=""></p>
+<h2 id="1-6UML语法描述"><a href="#1-6UML语法描述" class="headerlink" title="1.6UML语法描述"></a>1.6UML语法描述</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906274-5ff2643c-d0ea-4172-a63f-d69b6b7f968f.jpeg#align=left&display=inline&height=1326&originHeight=1326&originWidth=2283&size=0&status=done&style=none&width=2283" alt=""></p>
+<h1 id="二、用例图"><a href="#二、用例图" class="headerlink" title="二、用例图"></a>二、用例图</h1><h2 id="2-1用例图概要"><a href="#2-1用例图概要" class="headerlink" title="2.1用例图概要"></a>2.1用例图概要</h2><ol>
+<li>用例图是被称为参与者的外部用户所能观察到的系统功能的模型图。 (《UML参考手册》)</li>
+<li>用例图列出系统中的用例和系统外的参与者，并显示哪个参与者参与了哪个用例的执行(或称为发起了哪个用例)。</li>
+<li>用例图多用于静态建模阶段(主要是业务建模和需求建模)。</li>
+</ol>
+<h2 id="2-2用例图中的事物及解释"><a href="#2-2用例图中的事物及解释" class="headerlink" title="2.2用例图中的事物及解释"></a>2.2用例图中的事物及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906279-d720d76c-3c99-498b-a7dc-e6f94df97722.jpeg#align=left&display=inline&height=1043&originHeight=1043&originWidth=2227&size=0&status=done&style=none&width=2227" alt=""></p>
+<h2 id="2-3用例图中的关系及解释"><a href="#2-3用例图中的关系及解释" class="headerlink" title="2.3用例图中的关系及解释"></a>2.3用例图中的关系及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906293-ce587fc6-1749-49f0-a92c-f250c56d92a4.jpeg#align=left&display=inline&height=1317&originHeight=1317&originWidth=2266&size=0&status=done&style=none&width=2266" alt=""></p>
+<h2 id="2-4例子"><a href="#2-4例子" class="headerlink" title="2.4例子"></a>2.4例子</h2><h3 id="实例1-参与者之间的泛化关系"><a href="#实例1-参与者之间的泛化关系" class="headerlink" title="实例1 参与者之间的泛化关系"></a>实例1 参与者之间的泛化关系</h3><p><strong>参与者</strong>：经理，安全主管，保安<br><strong>用例</strong>：管理人事，批准预算，批准安全证书，监视周边</p>
+<blockquote>
+<p>  在参与者之间不存在泛化关系的情况下，各个参与者参与 用例的情况分别是：经理参与用例管理人事和批准预算；安全主管参与用例批准安全证书；保安参与用例监视周边。由于安全主管与经理，安全主管与保安之间泛化关系的存在，意味着安全主管可以担任经理和保安的角色，就能够参与经理和保安参与的用例。这样，安全主管就可以参与全部4个用例。但经理或者保安却不能担任安全主管的角色，也就不能参与用例批准安全证书。</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906310-e90f7f17-87dc-46bf-a767-10fce3eb8550.jpeg#align=left&display=inline&height=701&originHeight=701&originWidth=764&size=0&status=done&style=none&width=764" alt=""></p>
+<h3 id="实例2-用例之间扩展和包含关系"><a href="#实例2-用例之间扩展和包含关系" class="headerlink" title="实例2  用例之间扩展和包含关系"></a>实例2  用例之间扩展和包含关系</h3><blockquote>
+<p>用例的上下文是：短途旅行但汽车的油不足以应付全部路程。那么为汽车加油的动作在旅行的每个场景(事件流)中都会出现，不加油就不会完成旅行。吃饭则可以由司机决定是否进行，不吃饭不会影响旅行的完成。</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906272-6f0a5c86-8863-4786-90f0-17203dd6b017.jpeg#align=left&display=inline&height=474&originHeight=474&originWidth=800&size=0&status=done&style=none&width=800" alt=""></p>
+<h3 id="实例3-航空售票的用例图"><a href="#实例3-航空售票的用例图" class="headerlink" title="实例3.  航空售票的用例图"></a>实例3.  航空售票的用例图</h3><blockquote>
+<ol>
+<li>参与者(actor)：clerk，监督员，信用卡服务商，信息亭</li>
+<li>用例(use case)： Buy tickets， Buy Subscription， Make charges， Survey sales</li>
+<li>参与者Clerk参与(或称发起)Buy tickets和Buy Subscription 两个用例(关联关系)。两个用例的事件流都包含Make charges用例(包含关系)。</li>
+<li>系统由：Buy tickets， Buy Subscription， Make charges，  Survey sales组成。</li>
+<li>该系统主要包含：Buy tickets， Buy Subscription，  Make charges， Survey sales这几个功能。</li>
+<li>该系统主要面向的用户(参与者)：clerk，监督员，信用卡服务商，信息亭。</li>
+</ol>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906324-e628811d-4451-432c-b0a7-ad15ad2a4184.jpeg#align=left&display=inline&height=1133&originHeight=1133&originWidth=1055&size=0&status=done&style=none&width=1055" alt=""></p>
+<h1 id="三、类图"><a href="#三、类图" class="headerlink" title="三、类图"></a>三、类图</h1><h2 id="3-1类图概要"><a href="#3-1类图概要" class="headerlink" title="3.1类图概要"></a>3.1类图概要</h2><blockquote>
+<ul>
+<li>类图以反映类的结构(属性、操作)以及类之间的关系为主要目的，描述了软件系统的结构，是一种静态建模方法</li>
+<li>类图中的“类”与面向对象语言中的“类”的概念是对应的，是对现实世界中的事物的抽象</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906318-75873699-8a32-4711-b8ea-25a4a67e3307.jpeg#align=left&display=inline&height=319&originHeight=319&originWidth=1679&size=0&status=done&style=none&width=1679" alt=""></p>
+<h2 id="3-2类图中的事物及解释"><a href="#3-2类图中的事物及解释" class="headerlink" title="3.2类图中的事物及解释"></a>3.2类图中的事物及解释</h2><h3 id="3-2-1类"><a href="#3-2-1类" class="headerlink" title="3.2.1类"></a>3.2.1类</h3><blockquote>
+<ul>
+<li>从上到下分为三部分，分别是类名、属性和操作。类名是必须有的</li>
+<li>类如果有属性，则每一个属性都必须有一个名字，另外还可以有其它的描述信息，如可见性、数据类型、缺省值等</li>
+<li>类如果有操作，则每一个操作也都有一个名字，其它可选的信息包括可见性、参数的名字、参数类型、参数缺省值和操作的返回值的类型等</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906303-72910c07-3e60-429c-8664-e5e87a150141.jpeg#align=left&display=inline&height=441&originHeight=441&originWidth=1635&size=0&status=done&style=none&width=1635" alt=""></p>
+<h3 id="3-2-2接口"><a href="#3-2-2接口" class="headerlink" title="3.2.2接口"></a>3.2.2接口</h3><blockquote>
+<ul>
+<li>一组操作的集合，只有操作的声明而没有实现</li>
+</ul>
+</blockquote>
+<h3 id="3-2-3抽象类"><a href="#3-2-3抽象类" class="headerlink" title="3.2.3抽象类"></a>3.2.3抽象类</h3><blockquote>
+<ul>
+<li>不能被实例化的类，一般至少包含一个抽象操作</li>
+</ul>
+</blockquote>
+<h3 id="3-2-4模板类"><a href="#3-2-4模板类" class="headerlink" title="3.2.4模板类"></a>3.2.4模板类</h3><blockquote>
+<ul>
+<li>一种参数化的类，在编译时把模版参数绑定到不同的数据类型，从而产生不同的类</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906306-cf89d739-daef-4b0d-9682-e11038c80429.jpeg#align=left&display=inline&height=558&originHeight=558&originWidth=2168&size=0&status=done&style=none&width=2168" alt=""></p>
+<h2 id="3-3类图中的关系及解释"><a href="#3-3类图中的关系及解释" class="headerlink" title="3.3类图中的关系及解释"></a>3.3类图中的关系及解释</h2><h3 id="3-3-1关联关系"><a href="#3-3-1关联关系" class="headerlink" title="3.3.1关联关系"></a>3.3.1关联关系</h3><blockquote>
+<ul>
+<li>描述了类的结构之间的关系。具有方向、名字、角色和多重性等信息。一般的关 联关系语义较弱。也有两种语义较强，分别是聚合与组合</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906400-4651cb9d-f492-4e4a-868a-31bc03d26f21.jpeg#align=left&display=inline&height=221&originHeight=221&originWidth=316&size=0&status=done&style=none&width=316" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906312-af51cbfc-82aa-418f-9866-9d42978a72f7.jpeg#align=left&display=inline&height=499&originHeight=499&originWidth=1458&size=0&status=done&style=none&width=1458" alt=""></p>
+<blockquote>
+<ul>
+<li>聚合关系：特殊关联关系，指明一个聚集（整体）和组成部分之间的关系</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906344-96279c61-9a75-44d4-a78d-7e6c37997895.jpeg#align=left&display=inline&height=187&originHeight=187&originWidth=488&size=0&status=done&style=none&width=488" alt=""></p>
+<blockquote>
+<ul>
+<li>组合关系：语义更强的聚合，部分和整体具有相同的生命周期</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906331-ad2c9126-af62-4674-ade6-4366c2c40a3d.jpeg#align=left&display=inline&height=180&originHeight=180&originWidth=408&size=0&status=done&style=none&width=408" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906355-9efefd40-3217-489c-9139-4aa94e2c07ae.jpeg#align=left&display=inline&height=312&originHeight=312&originWidth=2293&size=0&status=done&style=none&width=2293" alt=""></p>
+<h3 id="3-3-2泛化关系"><a href="#3-3-2泛化关系" class="headerlink" title="3.3.2泛化关系"></a>3.3.2泛化关系</h3><blockquote>
+<ul>
+<li>在面向对象中一般称为继承关系，存在于父类与子类、父接口与子接口之间</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906371-9be3b458-7407-4cec-8316-16d2aeb99829.jpeg#align=left&display=inline&height=163&originHeight=163&originWidth=336&size=0&status=done&style=none&width=336" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906375-d6d9536d-381a-45d5-8143-db1893ba4324.jpeg#align=left&display=inline&height=342&originHeight=342&originWidth=2087&size=0&status=done&style=none&width=2087" alt=""></p>
+<h3 id="3-3-3实现关系"><a href="#3-3-3实现关系" class="headerlink" title="3.3.3实现关系"></a>3.3.3实现关系</h3><blockquote>
+<ul>
+<li>对应于类和接口之间的关系</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906389-987cbaa2-3f38-4bf8-9531-9504e66bbed5.jpeg#align=left&display=inline&height=221&originHeight=221&originWidth=334&size=0&status=done&style=none&width=334" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906402-125ccd26-9ca7-4b6a-aa51-0d7d5f339b92.jpeg#align=left&display=inline&height=313&originHeight=313&originWidth=906&size=0&status=done&style=none&width=906" alt=""></p>
+<h3 id="3-3-4依赖关系"><a href="#3-3-4依赖关系" class="headerlink" title="3.3.4依赖关系"></a>3.3.4依赖关系</h3><blockquote>
+<ul>
+<li>描述了一个类的变化对依赖于它的类产生影响的情况。有多种表现形式，例如绑定(bind)、友元(friend)等</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906363-2a28e1a9-bde4-4b98-87ad-f3db0b4f0e7d.jpeg#align=left&display=inline&height=180&originHeight=180&originWidth=379&size=0&status=done&style=none&width=379" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906411-cca1b128-629a-430c-bc36-b920c434e41f.jpeg#align=left&display=inline&height=461&originHeight=461&originWidth=2117&size=0&status=done&style=none&width=2117" alt=""></p>
+<h2 id="3-4类图与代码的映射"><a href="#3-4类图与代码的映射" class="headerlink" title="3.4类图与代码的映射"></a>3.4类图与代码的映射</h2><h3 id="3-4-1类的映射"><a href="#3-4-1类的映射" class="headerlink" title="3.4.1类的映射"></a>3.4.1类的映射</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906428-20992535-f2b6-4841-be46-741e34acef78.jpeg#align=left&display=inline&height=1244&originHeight=1244&originWidth=1980&size=0&status=done&style=none&width=1980" alt=""></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C++代码</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Vehicle</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">   <span class="function"><span class="keyword">virtual</span> <span class="keyword">int</span> <span class="title">Start</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line">   <span class="function"><span class="keyword">virtual</span> <span class="keyword">int</span> <span class="title">Stop</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line">   <span class="function"><span class="keyword">virtual</span> <span class="keyword">int</span> <span class="title">Run</span><span class="params">(<span class="keyword">float</span> fSpeed)</span> </span>= <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">   <span class="keyword">float</span> fMaxSpeed;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//java代码</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Vehicle</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">int</span> <span class="title">Start</span><span class="params">()</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">int</span> <span class="title">Stop</span><span class="params">()</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">int</span> <span class="title">Run</span><span class="params">(<span class="keyword">float</span> fSpeed)</span></span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">float</span> fMaxSpeed;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-2关联关系的映射"><a href="#3-4-2关联关系的映射" class="headerlink" title="3.4.2关联关系的映射"></a>3.4.2关联关系的映射</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906552-af1dedba-d589-4a13-bffb-2bb20ae2bc64.jpeg#align=left&display=inline&height=525&originHeight=525&originWidth=765&size=0&status=done&style=none&width=765" alt=""></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C++代码</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dialog</span></span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  Button btnOK;</span><br><span class="line">  Button btnCancel;</span><br><span class="line">  TextBox txtInfo;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Button</span></span></span><br><span class="line"><span class="class">&#123;</span>&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TextBox</span></span></span><br><span class="line"><span class="class">&#123;</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-3泛化关系的映射"><a href="#3-4-3泛化关系的映射" class="headerlink" title="3.4.3泛化关系的映射"></a>3.4.3泛化关系的映射</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906442-e3fa59f8-64aa-4c72-a814-c831ac13c4f7.jpeg#align=left&display=inline&height=487&originHeight=487&originWidth=778&size=0&status=done&style=none&width=778" alt=""></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C++代码</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SavingsAccount</span> :</span> <span class="keyword">public</span> Account</span><br><span class="line">&#123; &#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Java代码</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SavingsAccount</span> <span class="keyword">extends</span> <span class="title">Account</span></span></span><br><span class="line"><span class="class"></span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-4实现关系的映射"><a href="#3-4-4实现关系的映射" class="headerlink" title="3.4.4实现关系的映射"></a>3.4.4实现关系的映射</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906394-29aa38a5-5211-4b33-a393-95a345b3eff3.jpeg#align=left&display=inline&height=700&originHeight=700&originWidth=722&size=0&status=done&style=none&width=722" alt=""></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C++代码</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Shape</span></span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">Draw</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Circle</span> :</span> <span class="keyword">public</span> Shape</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"> <span class="function"><span class="keyword">void</span> <span class="title">Draw</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">private</span>；</span><br><span class="line">  Point ptCenter;</span><br><span class="line">  <span class="keyword">int</span> nRadius;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Java代码</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Shape</span></span></span><br><span class="line"><span class="class"></span>&#123; </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">Draw</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Circle</span> <span class="keyword">implements</span> <span class="title">Shape</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Draw</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">private</span> Point ptCenter;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">int</span> nRadius;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-5依赖关系的映射"><a href="#3-4-5依赖关系的映射" class="headerlink" title="3.4.5依赖关系的映射"></a>3.4.5依赖关系的映射</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906425-11da0ed1-fbcd-402c-8c9e-154c8a852306.jpeg#align=left&display=inline&height=556&originHeight=556&originWidth=676&size=0&status=done&style=none&width=676" alt=""></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C++代码</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span></span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">size</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">Push</span><span class="params">(T elem)</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">Pop</span><span class="params">()</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">const</span> T&amp; <span class="title">GetTop</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> Stack&lt;<span class="keyword">float</span>&gt; FloatStack;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C++(编译器生成)</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">FloatStack</span></span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">int</span> <span class="built_in">size</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">Push</span><span class="params">(<span class="keyword">float</span> elem)</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">int</span> <span class="title">Pop</span><span class="params">()</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">const</span> <span class="keyword">float</span>&amp; <span class="title">GetTop</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-5类图例子"><a href="#3-5类图例子" class="headerlink" title="3.5类图例子"></a>3.5类图例子</h2><h3 id="3-5-1图形编辑器"><a href="#3-5-1图形编辑器" class="headerlink" title="3.5.1图形编辑器"></a>3.5.1图形编辑器</h3><blockquote>
+<ul>
+<li>图形编辑器一般都具有一些基本图形，如直线、矩形等，用户可以直接使用基本图形画图，也可以把基本图形组合在一起创建复杂图形</li>
+<li>如果区别对待基本图形和组合图形，会使代码变得复杂，而且多数情况下用户认为二者是一样的</li>
+<li>组合模式可以用相同的方式处理两种图形</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906409-86ad268b-1fef-4490-8d69-49c0c625b699.jpeg#align=left&display=inline&height=797&originHeight=797&originWidth=2255&size=0&status=done&style=none&width=2255" alt=""></p>
+<h3 id="3-5-2演出售票系统"><a href="#3-5-2演出售票系统" class="headerlink" title="3.5.2演出售票系统"></a>3.5.2演出售票系统</h3><blockquote>
+<ul>
+<li>在用例驱动的开发过程中，通过分析各个用例及参与者得到类图。分析用例图的过程中需要根据面向对象的原则设计类和关系，根据用例的细节设计类的属性和操作</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906452-8959b316-1478-4ee3-900e-355aad268c96.jpeg#align=left&display=inline&height=1333&originHeight=1333&originWidth=2344&size=0&status=done&style=none&width=2344" alt=""></p>
+<h1 id="四、顺序图"><a href="#四、顺序图" class="headerlink" title="四、顺序图"></a>四、顺序图</h1><h2 id="4-1概要"><a href="#4-1概要" class="headerlink" title="4.1概要"></a>4.1概要</h2><blockquote>
+<ul>
+<li>顺序图用来表示用例中的行为顺序。当执行一个用例行为时，顺序图中的每条消息对应了一个类操作或状态机中引起转换的事件。</li>
+<li>顺序图展示对象之间的交互，这些交互是指在场景或用例的事件流中发生的。 顺序图属于动态建模。</li>
+<li>顺序图的重点在消息序列上，也就是说，描述消息是如何在对象间发送和接收的。表示了对象之间传送消息的时间顺序。</li>
+<li>浏览顺序图的方法是：从上到下查看对象间交换的消息。</li>
+</ul>
+</blockquote>
+<h2 id="4-2顺序图中的事物及解释"><a href="#4-2顺序图中的事物及解释" class="headerlink" title="4.2顺序图中的事物及解释"></a>4.2顺序图中的事物及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906461-be848924-d9b7-46d3-a879-31d68cb09a00.jpeg#align=left&display=inline&height=905&originHeight=905&originWidth=2196&size=0&status=done&style=none&width=2196" alt=""></p>
+<h2 id="4-3顺序图与用例图和类图的关系"><a href="#4-3顺序图与用例图和类图的关系" class="headerlink" title="4.3顺序图与用例图和类图的关系"></a>4.3顺序图与用例图和类图的关系</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906456-7cdc850f-e1de-4df8-8d20-cfdbab2100dd.jpeg#align=left&display=inline&height=809&originHeight=809&originWidth=1446&size=0&status=done&style=none&width=1446" alt=""></p>
+<h2 id="4-4顺序图例子"><a href="#4-4顺序图例子" class="headerlink" title="4.4顺序图例子"></a>4.4顺序图例子</h2><ul>
+<li>简单的例子</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906449-d27f6280-a7de-412f-8a42-1de545e098b5.jpeg#align=left&display=inline&height=947&originHeight=947&originWidth=2259&size=0&status=done&style=none&width=2259" alt=""></p>
+<ul>
+<li>复杂的例子</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906499-9be4cbfe-eaf3-4a5c-a2df-39544c0129b5.jpeg#align=left&display=inline&height=843&originHeight=843&originWidth=1896&size=0&status=done&style=none&width=1896" alt=""></p>
+<blockquote>
+<ul>
+<li>此图是描述购票这个用例的顺序图。顾客在信息亭与售票中心通话触发了这个用例的执行。顺序图中付款这个用例包括售票中心与信息亭和信用卡服务处使用消息进行通信过程。</li>
+<li>此图中存在的事物有：</li>
+</ul>
+</blockquote>
+<p>对象(信息亭 Kjosk ，售票中心 Box Office， 信用卡服务 Credit Card Service )，生命线，消息符号。</p>
+<blockquote>
+<ul>
+<li>售票中心发Show Available(seat-list)消息给信息亭，表示调用信息亭类中的Show Available(seat-list)操作，给出可用的座位表。</li>
+</ul>
+</blockquote>
+<h1 id="五、协作图"><a href="#五、协作图" class="headerlink" title="五、协作图"></a>五、协作图</h1><h2 id="5-1概要"><a href="#5-1概要" class="headerlink" title="5.1概要"></a>5.1概要</h2><blockquote>
+<ul>
+<li>协作图是一种交互图，强调的是发送和接收消息的对象之间的组织结构，使用协作图来说明系统的动态情况。</li>
+<li>协作图主要描述协作对象间的交互和链接，显示对象、对象间的链接以及对象间如何发送消息。</li>
+<li>协作图可以表示类操作的实现。</li>
+</ul>
+</blockquote>
+<h2 id="5-2协作图中的事物及解释"><a href="#5-2协作图中的事物及解释" class="headerlink" title="5.2协作图中的事物及解释"></a>5.2协作图中的事物及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906513-6ceba816-9c2b-4611-9957-21e8291418e5.jpeg#align=left&display=inline&height=585&originHeight=585&originWidth=2283&size=0&status=done&style=none&width=2283" alt=""></p>
+<h2 id="5-3协议图中的关系及解释"><a href="#5-3协议图中的关系及解释" class="headerlink" title="5.3协议图中的关系及解释"></a>5.3协议图中的关系及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906540-9945e70c-d656-47ef-8005-e57d1f77c587.jpeg#align=left&display=inline&height=294&originHeight=294&originWidth=2255&size=0&status=done&style=none&width=2255" alt=""></p>
+<h2 id="5-4消息标签"><a href="#5-4消息标签" class="headerlink" title="5.4消息标签"></a>5.4消息标签</h2><p><strong>消息标签的Format：</strong>    [前缀]  [守卫条件]    序列表达式 [返回值：=]   消息名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 前缀的语法规则：    序列号，序列号，…，序列号 ‘&#x2F;’</span><br><span class="line">     (前缀用来同步线程，意思是在发送当前消息之前指定序列号的消息被处理.例：1.1a， 1.1b&#x2F;)</span><br><span class="line">2. 守卫条件的语法规则：  [条件短句]   </span><br><span class="line">    说明：条件短句通常用伪代码或真正的程序语言来表示。       例：[x&gt;&#x3D;0]</span><br><span class="line">3. 返回值和消息名：返回值表示一个消息的返回结果，消息名指出了消息的名字和所需参数。 例：x:&#x3D;calc ( n )</span><br><span class="line">4. 下面是一个完整的消息标签：</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906551-e93d2d14-857d-41cc-95ee-6b6acd1d858e.jpeg#align=left&display=inline&height=199&originHeight=199&originWidth=1082&size=0&status=done&style=none&width=1082" alt=""></p>
+<h2 id="5-5协作图与顺序图的区别和联系"><a href="#5-5协作图与顺序图的区别和联系" class="headerlink" title="5.5协作图与顺序图的区别和联系"></a>5.5协作图与顺序图的区别和联系</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 协作图和顺序图都表示出了对象间的交互作用，但是它们侧重点不同。</span><br><span class="line">2. 顺序图清楚地表示了交互作用中的时间顺序(强调时间)，但没有明确表示对象间的关系。</span><br><span class="line">3. 协作图清楚地表示了对象间的关系(强调空间)，但时间顺序必须从顺序号获得。</span><br><span class="line">4. 协作图和顺序图可以相互转化。</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-6协作图例子"><a href="#5-6协作图例子" class="headerlink" title="5.6协作图例子"></a>5.6协作图例子</h2><h3 id="1-打印操作的协作图"><a href="#1-打印操作的协作图" class="headerlink" title="1.打印操作的协作图"></a>1.打印操作的协作图</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906503-1534d8f9-6257-4ed7-8228-2a286f911d92.jpeg#align=left&display=inline&height=532&originHeight=532&originWidth=2244&size=0&status=done&style=none&width=2244" alt=""></p>
+<h3 id="2-乘坐电梯的协作图"><a href="#2-乘坐电梯的协作图" class="headerlink" title="2.乘坐电梯的协作图"></a>2.乘坐电梯的协作图</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906498-a9cf1444-66be-4c6d-90ff-c04a48d3535e.jpeg#align=left&display=inline&height=509&originHeight=509&originWidth=1156&size=0&status=done&style=none&width=1156" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">图中存在的事物有：</span><br><span class="line">    参与者</span><br><span class="line">    按钮对象</span><br><span class="line">    电梯控制对象</span><br><span class="line">    命令对象</span><br><span class="line">    工作队列</span><br><span class="line">    电梯对象</span><br><span class="line">    </span><br><span class="line">图中存在的关系有：</span><br><span class="line">    链接</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>参与者需要乘坐电梯，他从系统外部按下按钮，让电梯到达他想去的楼层。此时，电梯系统的操作被启动，电梯控制对象以循环的方式检查所有的电梯，从中选择一个工作队列长度最短的。然后，它创建一个作业命令，并将该命令放入对应电梯的工作队列，接着激活队列。电梯对象并发运行，从它的队列中选择一个作业并执行。电梯是一个活动对象，它与它的控制线程并发执行。</p>
+</blockquote>
+<h1 id="六、状态图"><a href="#六、状态图" class="headerlink" title="六、状态图"></a>六、状态图</h1><h2 id="6-1状态图概要"><a href="#6-1状态图概要" class="headerlink" title="6.1状态图概要"></a>6.1状态图概要</h2><h3 id="6-1-1状态图"><a href="#6-1-1状态图" class="headerlink" title="6.1.1状态图"></a>6.1.1状态图</h3><ul>
+<li>说明对象在它的生命期中响应事件所经历的状态序列，以及它们对那些事件的响应。</li>
+</ul>
+<h3 id="6-1-2状态图用于"><a href="#6-1-2状态图用于" class="headerlink" title="6.1.2状态图用于"></a>6.1.2状态图用于</h3><ul>
+<li>揭示Actor、类、子系统和组件的复杂特性。 为实时系统建模。</li>
+</ul>
+<h2 id="6-2状态图的组成"><a href="#6-2状态图的组成" class="headerlink" title="6.2状态图的组成"></a>6.2状态图的组成</h2><h3 id="6-2-1状态"><a href="#6-2-1状态" class="headerlink" title="6.2.1状态"></a>6.2.1状态</h3><ul>
+<li>对象的状态是指在这个对象的生命期中的一个条件或状况，在此期间对象将满足某些条件、执行某些活动，或等待某些事件。</li>
+</ul>
+<h3 id="6-2-2转移"><a href="#6-2-2转移" class="headerlink" title="6.2.2转移"></a>6.2.2转移</h3><ul>
+<li>转移是由一种状态到另一种状态的迁移。这种转移由被建模实体内部或外部事件触发。</li>
+<li>对一个类来说，转移通常是调用了一个可以引起状态发生重要变化的操作的结果。</li>
+</ul>
+<h2 id="6-3状态图中的事物及解释"><a href="#6-3状态图中的事物及解释" class="headerlink" title="6.3状态图中的事物及解释"></a>6.3状态图中的事物及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906531-307ec3c7-bdf4-423e-813b-abfa0c5017ae.jpeg#align=left&display=inline&height=559&originHeight=559&originWidth=2201&size=0&status=done&style=none&width=2201" alt=""></p>
+<h2 id="6-4状态的可选活动表"><a href="#6-4状态的可选活动表" class="headerlink" title="6.4状态的可选活动表"></a>6.4状态的可选活动表</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906512-fca008ae-4028-48a8-9ca2-b579271c288c.jpeg#align=left&display=inline&height=621&originHeight=621&originWidth=2238&size=0&status=done&style=none&width=2238" alt=""></p>
+<h2 id="6-5例子"><a href="#6-5例子" class="headerlink" title="6.5例子"></a>6.5例子</h2><h3 id="1-对象的状态图"><a href="#1-对象的状态图" class="headerlink" title="(1)对象的状态图"></a>(1)对象的状态图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">图中包含以下状态：</span><br><span class="line">    初始状态</span><br><span class="line">    Available状态</span><br><span class="line">    Locked状态</span><br><span class="line">    Sold状态</span><br><span class="line">    </span><br><span class="line">状态间的转移</span><br><span class="line">    初始状态àAvailable状态</span><br><span class="line">    票被预订(lock)：AvailableàLocked</span><br><span class="line">    预定后付款(buy)：LockedàSold</span><br><span class="line">    预定解除(unlock)：LockedàAvailable</span><br><span class="line">    预定过期(time out)：LockedàAvailable</span><br><span class="line">    直接购买(assigned to)：AvailableàSold</span><br><span class="line">    换其它票(exchang) ，该票重有效：SoldàAvailable</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906511-a5a65654-4261-4b34-9b96-28397fcb1bb6.jpeg#align=left&display=inline&height=609&originHeight=609&originWidth=988&size=0&status=done&style=none&width=988" alt=""></p>
+<h3 id="2-网上银行登录系统"><a href="#2-网上银行登录系统" class="headerlink" title="(2)网上银行登录系统"></a>(2)网上银行登录系统</h3><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906571-d43ff416-63dc-433c-a0d8-36133468d746.jpeg#align=left&display=inline&height=1532&originHeight=1532&originWidth=2307&size=0&status=done&style=none&width=2307" alt=""></p>
+<h1 id="七、活动图"><a href="#七、活动图" class="headerlink" title="七、活动图"></a>七、活动图</h1><h2 id="7-1活动图概要"><a href="#7-1活动图概要" class="headerlink" title="7.1活动图概要"></a>7.1活动图概要</h2><ul>
+<li>描述系统的动态行为。</li>
+<li>包含活动状态(ActionState)，活动状态是指业务用例的一个执行步骤或一个操作，不是普通对象的状态。</li>
+<li>活动图适合描述在没有外部事件触发的情况下的系统内部的逻辑执行过程；否则，状态图更容易描述。</li>
+<li>类似于传统意义上的流程图。</li>
+<li>活动图主要用于：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">+ 业务建模时，用于详述业务用例，描述一项业务的执行过程；</span><br><span class="line">+ 设计时，描述操作的流程。</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-2活动图事物"><a href="#7-2活动图事物" class="headerlink" title="7.2活动图事物"></a>7.2活动图事物</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906540-8d308e6e-3683-4505-a7e8-fb31d5b1fe88.jpeg#align=left&display=inline&height=740&originHeight=740&originWidth=1951&size=0&status=done&style=none&width=1951" alt=""></p>
+<h2 id="7-3活动图关系"><a href="#7-3活动图关系" class="headerlink" title="7.3活动图关系"></a>7.3活动图关系</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906543-e8bff444-8d10-42fd-94b1-e5d9dbb0058a.jpeg#align=left&display=inline&height=479&originHeight=479&originWidth=1946&size=0&status=done&style=none&width=1946" alt=""></p>
+<h2 id="7-4活动图实例"><a href="#7-4活动图实例" class="headerlink" title="7.4活动图实例"></a>7.4活动图实例</h2><h3 id="1-一般的活动图"><a href="#1-一般的活动图" class="headerlink" title="1.一般的活动图"></a>1.一般的活动图</h3><ul>
+<li>本活动图描述一个处理订单的用例执行过</li>
+</ul>
+<p>(1)执行setup order</p>
+<p>(2)根据order的类型是执行不同的分支：</p>
+<ul>
+<li><p>single order：执行assign seat、charge credit card</p>
+</li>
+<li><p>subscription：同时执行assignseats、debit account或  award bonus</p>
+</li>
+<li><p>single order与subscription两步可同时进行</p>
+</li>
+</ul>
+<p>(3) 最后mail packet。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906550-a6aa0fbe-d7de-41d5-86c4-aaae24badd88.jpeg#align=left&display=inline&height=836&originHeight=836&originWidth=905&size=0&status=done&style=none&width=905" alt=""></p>
+<h3 id="2-带泳道的活动图"><a href="#2-带泳道的活动图" class="headerlink" title="2.带泳道的活动图"></a>2.带泳道的活动图</h3><ul>
+<li>本例为一个按活动职责(带泳道)组织的处理订单用例的活动图(模型中的活动按职责组织)。活动被按职责分配到用线分开的不同区域(泳道)：<ul>
+<li>Customer</li>
+<li>Sales</li>
+<li>Stockroom</li>
+</ul>
+</li>
+</ul>
+<p>(1)顾客要求服务，Sales负责接收定单，并提交到Stockroom<br>(2) Stockroom处理定单，与此同时，Customer付款，并由Sales处Deliverorder至Customer。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906582-6179c6d7-3a38-421b-b4b0-f1120ce14952.jpeg#align=left&display=inline&height=865&originHeight=865&originWidth=1172&size=0&status=done&style=none&width=1172" alt=""></p>
+<h1 id="八、构件图"><a href="#八、构件图" class="headerlink" title="八、构件图"></a>八、构件图</h1><h2 id="8-1构件图概要"><a href="#8-1构件图概要" class="headerlink" title="8.1构件图概要"></a>8.1构件图概要</h2><ul>
+<li>构件图用于静态建模，是表示构件类型的组织以及各种构件之间依赖关系的图。</li>
+<li>构件图通过对构件间依赖关系的描述来估计对系统构件的修改给系统可能带来的影响。</li>
+</ul>
+<h2 id="8-2构件图中的事物及解释"><a href="#8-2构件图中的事物及解释" class="headerlink" title="8.2构件图中的事物及解释"></a>8.2构件图中的事物及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906562-746f84cc-5fd7-4bea-bec2-fcfbfcf4857a.jpeg#align=left&display=inline&height=466&originHeight=466&originWidth=2118&size=0&status=done&style=none&width=2118" alt=""></p>
+<ul>
+<li>可替换的物理部分包括软件代码、脚本或命令行文件，也可以表示运行时的对象，文档，数据库等。</li>
+<li>节点(node)是运行时的物理对象，代表一个计算机资源。具体请参见教程“部署图(deployment diagram)”部分。</li>
+</ul>
+<h2 id="8-3构件图中的关系及解释"><a href="#8-3构件图中的关系及解释" class="headerlink" title="8.3构件图中的关系及解释"></a>8.3构件图中的关系及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906608-a03fd80f-3039-4979-82a3-8945abe6c6c0.jpeg#align=left&display=inline&height=276&originHeight=276&originWidth=2012&size=0&status=done&style=none&width=2012" alt=""></p>
+<h2 id="8-4构件图的例子"><a href="#8-4构件图的例子" class="headerlink" title="8.4构件图的例子"></a>8.4构件图的例子</h2><h3 id="实例1"><a href="#实例1" class="headerlink" title="实例1"></a>实例1</h3><ul>
+<li>图中的构件名称是Dictionary字典。</li>
+<li>该构件向外提供两个接口，即两个服务Spell-check拼写检查、Synonyms同义词。</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906611-ebeb2660-255d-41e2-9c90-b701958654d0.jpeg#align=left&display=inline&height=360&originHeight=360&originWidth=1217&size=0&status=done&style=none&width=1217" alt=""></p>
+<h3 id="实例2"><a href="#实例2" class="headerlink" title="实例2"></a>实例2</h3><ul>
+<li>图中“Planner计划者”构件向外提供一个“update更新”接口服务。</li>
+<li>同时，该构件要求外部接口提供一个“Reservations预定”服务。</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906572-0c146858-974f-4540-bdbb-5d05e7cd0f3f.jpeg#align=left&display=inline&height=585&originHeight=585&originWidth=915&size=0&status=done&style=none&width=915" alt=""></p>
+<h1 id="九、部署图"><a href="#九、部署图" class="headerlink" title="九、部署图"></a>九、部署图</h1><h2 id="9-1部署图概要"><a href="#9-1部署图概要" class="headerlink" title="9.1部署图概要"></a>9.1部署图概要</h2><ul>
+<li>部署图用于静态建模，是表示运行时过程节点结构、构件实例及其对象结构的图。</li>
+<li>如果含有依赖关系的构件实例放置在不同节点上，部署视图可以展示出执行过程中的瓶颈。</li>
+<li>部署图的两种表现形式：实例层部署图和描述层部署图(会在后面的实例中给出)。</li>
+</ul>
+<h2 id="9-2部署图中的事物及解释"><a href="#9-2部署图中的事物及解释" class="headerlink" title="9.2部署图中的事物及解释"></a>9.2部署图中的事物及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906589-b894e55a-a04d-40e1-b268-f732f8085750.jpeg#align=left&display=inline&height=973&originHeight=973&originWidth=2173&size=0&status=done&style=none&width=2173" alt=""></p>
+<h2 id="9-3部署图中的关系及解释"><a href="#9-3部署图中的关系及解释" class="headerlink" title="9.3部署图中的关系及解释"></a>9.3部署图中的关系及解释</h2><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906607-792aca2d-2893-4a7c-8a19-7bab02859eaa.jpeg#align=left&display=inline&height=583&originHeight=583&originWidth=2181&size=0&status=done&style=none&width=2181" alt=""></p>
+<h2 id="9-4部署图例子"><a href="#9-4部署图例子" class="headerlink" title="9.4部署图例子"></a>9.4部署图例子</h2><h3 id="实例1-1"><a href="#实例1-1" class="headerlink" title="实例1"></a>实例1</h3><ul>
+<li>实例层部署图描述各节点和它们之间的连接。</li>
+<li>本图中的信息与上张描述层部署图中的内容是相互对应的。</li>
+<li>图中的关系是各个节点之间存在的通信关系。</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906621-3673f851-2a38-499e-9cc4-06876e38a2df.jpeg#align=left&display=inline&height=713&originHeight=713&originWidth=1181&size=0&status=done&style=none&width=1181" alt=""></p>
+<h3 id="实例2-1"><a href="#实例2-1" class="headerlink" title="实例2"></a>实例2</h3><ul>
+<li>描述层部署图表示了系统中的各节点和每个节点包含的构件。</li>
+<li>图中包括的各种关系如下：<ul>
+<li>通信链关系(不带箭头的直线)<ul>
+<li>TicketServe票服务器与Kiosk信息厅之间存在一对多的通信关联；与SalesTerminal售票终端也存在一对多的通信关联；</li>
+</ul>
+</li>
+<li>依赖关系(带箭头的虚线)<ul>
+<li>TicketSeller售票构件依赖CreditCardCharges信用卡付款构件和TicketDB票数据库构件提供的服务。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906663-e73e3f72-8c66-47d0-b399-db2ee37b3ffd.jpeg#align=left&display=inline&height=1474&originHeight=1474&originWidth=1290&size=0&status=done&style=none&width=1290" alt=""></p>
+<h2 id="9-5关于部署图与构件图"><a href="#9-5关于部署图与构件图" class="headerlink" title="9.5关于部署图与构件图"></a>9.5关于部署图与构件图</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">部署图与构件图相同的构成元素：</span><br><span class="line">    构件、接口、构件实例、构件向外提供服务、构件要求外部提供的服务。</span><br><span class="line">部署图与构件图的关系：</span><br><span class="line">       部署图表现构件实例；</span><br><span class="line">       构件图表现构件类型的定义。</span><br><span class="line">   </span><br><span class="line">       部署图偏向于描述构件在节点中运行时的状态，描述了构件运行的环境；</span><br><span class="line">       构件图偏向于描述构件之间相互依赖支持的基本关系。</span><br></pre></td></tr></table></figure>
+
+<h1 id="十、附录"><a href="#十、附录" class="headerlink" title="十、附录"></a>十、附录</h1><p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906624-88ad3e6a-937c-4f55-8a95-8db9719c40c5.jpeg#align=left&display=inline&height=965&originHeight=965&originWidth=2274&size=0&status=done&style=none&width=2274" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906616-383d8db8-9af7-4d8e-aa10-b89f8b3e6d13.jpeg#align=left&display=inline&height=1268&originHeight=1268&originWidth=1757&size=0&status=done&style=none&width=1757" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/507188/1576578906636-6f1bee97-562e-4fe4-b772-fae76adf25fd.jpeg#align=left&display=inline&height=1431&originHeight=1431&originWidth=2171&size=0&status=done&style=none&width=2171" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.《用例驱动UML对象建模应用——范例分析》Doug Rosenberg、Kendall Scott 著，人民邮电出版社，2005。</span><br><span class="line">2.《UML精粹——标准对象建模语言简明指南》(第3版)Martin Fowler 著，徐家福 译，清华大学出版社，2005。</span><br><span class="line">3.《UML对象、组件和框架——Catalysis方法》Desmond Francis D’Souza、Alan Cameron Wills 著，清华大学出版社，2004。</span><br><span class="line">4.《UML和模式应用》(第2版)Craig Larman 著，机械工业出版社，2004。</span><br><span class="line">5.《有效用例模式》Steve Adolph， Paul Bramble 著，车立红 译，清华大学出版社，2003。</span><br><span class="line">6.《用例建模》，Kurt Bittner 著，姜昊 译，清华大学出版社，2003</span><br><span class="line">7.《UML和统一过程实用面向对象的分析和设计》Jim Arlow，Ila Neustadt，机械工业出版社，2003。</span><br><span class="line">8.《UML风格》Scott W. Ambler 著，王少峰 译，清华大学出版社，2004。 </span><br><span class="line">9.《UML用户指南》Grady Booch，Ivar Jacobson著，邵维忠等译，机械工业出版社，2001年6月。</span><br><span class="line">10. 《UML参考手册》Ivar Jacobson，James Rumbaugh。姚淑兰，唐发根译。机械工业出版社，2001。</span><br></pre></td></tr></table></figure>
+
+      </div>
+      
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-09T19:32:44+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>updated at Feb 9, 2020</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/02/09/UML%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/&title=UML基础教程 | Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/02/09/UML%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/&title=UML基础教程 | Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/02/09/UML%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/&title=UML基础教程 | Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'UML基础教程',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">Hexo</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="/leafsunshin@163.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=63035382"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#UML基础教程"><span class="toc-text">UML基础教程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一、前言"><span class="toc-text">一、前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1UML概述"><span class="toc-text">1.1UML概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-1UML简介"><span class="toc-text">1.1.1UML简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-2UML模型图的构成"><span class="toc-text">1.1.2UML模型图的构成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2UML事物"><span class="toc-text">1.2UML事物</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1构件事物"><span class="toc-text">1.2.1构件事物</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2行为事物"><span class="toc-text">1.2.2行为事物</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3分组事物"><span class="toc-text">1.2.3分组事物</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-4注释事物"><span class="toc-text">1.2.4注释事物</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3UML关系"><span class="toc-text">1.3UML关系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-1依赖"><span class="toc-text">1.3.1依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-2关联"><span class="toc-text">1.3.2关联</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-3泛化"><span class="toc-text">1.3.3泛化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-4实现"><span class="toc-text">1.3.4实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4各UML图及特征"><span class="toc-text">1.4各UML图及特征</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-1-用例图-Use-Case-Diagram"><span class="toc-text">1.4.1 用例图( Use Case Diagram )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-2-类图-Class-Diagram"><span class="toc-text">1.4.2 类图(Class Diagram)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-3对象图-Object-Diagram"><span class="toc-text">1.4.3对象图( Object Diagram )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-4-顺序图-Sequence-Diagram"><span class="toc-text">1.4.4 顺序图(Sequence Diagram)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-5协作图-Collaboration-Diagram"><span class="toc-text">1.4.5协作图(Collaboration Diagram)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-6-状态图-State-Chart-Diagram"><span class="toc-text">1.4.6 状态图(State Chart Diagram)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-7-活动图-Activity-Diagram"><span class="toc-text">1.4.7 活动图(Activity Diagram)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-8-构件图-Component-Diagram"><span class="toc-text">1.4.8 构件图(Component Diagram)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-9-部署图-Deployment-Diagram"><span class="toc-text">1.4.9 部署图(Deployment Diagram)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5各UML图的关系"><span class="toc-text">1.5各UML图的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-6UML语法描述"><span class="toc-text">1.6UML语法描述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、用例图"><span class="toc-text">二、用例图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1用例图概要"><span class="toc-text">2.1用例图概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2用例图中的事物及解释"><span class="toc-text">2.2用例图中的事物及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3用例图中的关系及解释"><span class="toc-text">2.3用例图中的关系及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4例子"><span class="toc-text">2.4例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#实例1-参与者之间的泛化关系"><span class="toc-text">实例1 参与者之间的泛化关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例2-用例之间扩展和包含关系"><span class="toc-text">实例2  用例之间扩展和包含关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例3-航空售票的用例图"><span class="toc-text">实例3.  航空售票的用例图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、类图"><span class="toc-text">三、类图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1类图概要"><span class="toc-text">3.1类图概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2类图中的事物及解释"><span class="toc-text">3.2类图中的事物及解释</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-1类"><span class="toc-text">3.2.1类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-2接口"><span class="toc-text">3.2.2接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-3抽象类"><span class="toc-text">3.2.3抽象类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-4模板类"><span class="toc-text">3.2.4模板类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3类图中的关系及解释"><span class="toc-text">3.3类图中的关系及解释</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-1关联关系"><span class="toc-text">3.3.1关联关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-2泛化关系"><span class="toc-text">3.3.2泛化关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-3实现关系"><span class="toc-text">3.3.3实现关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-4依赖关系"><span class="toc-text">3.3.4依赖关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4类图与代码的映射"><span class="toc-text">3.4类图与代码的映射</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-1类的映射"><span class="toc-text">3.4.1类的映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-2关联关系的映射"><span class="toc-text">3.4.2关联关系的映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-3泛化关系的映射"><span class="toc-text">3.4.3泛化关系的映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-4实现关系的映射"><span class="toc-text">3.4.4实现关系的映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-5依赖关系的映射"><span class="toc-text">3.4.5依赖关系的映射</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5类图例子"><span class="toc-text">3.5类图例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-1图形编辑器"><span class="toc-text">3.5.1图形编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-2演出售票系统"><span class="toc-text">3.5.2演出售票系统</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、顺序图"><span class="toc-text">四、顺序图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1概要"><span class="toc-text">4.1概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2顺序图中的事物及解释"><span class="toc-text">4.2顺序图中的事物及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3顺序图与用例图和类图的关系"><span class="toc-text">4.3顺序图与用例图和类图的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4顺序图例子"><span class="toc-text">4.4顺序图例子</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、协作图"><span class="toc-text">五、协作图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-1概要"><span class="toc-text">5.1概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-2协作图中的事物及解释"><span class="toc-text">5.2协作图中的事物及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-3协议图中的关系及解释"><span class="toc-text">5.3协议图中的关系及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-4消息标签"><span class="toc-text">5.4消息标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-5协作图与顺序图的区别和联系"><span class="toc-text">5.5协作图与顺序图的区别和联系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-6协作图例子"><span class="toc-text">5.6协作图例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-打印操作的协作图"><span class="toc-text">1.打印操作的协作图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-乘坐电梯的协作图"><span class="toc-text">2.乘坐电梯的协作图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#六、状态图"><span class="toc-text">六、状态图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#6-1状态图概要"><span class="toc-text">6.1状态图概要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-1状态图"><span class="toc-text">6.1.1状态图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-2状态图用于"><span class="toc-text">6.1.2状态图用于</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-2状态图的组成"><span class="toc-text">6.2状态图的组成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-1状态"><span class="toc-text">6.2.1状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-2转移"><span class="toc-text">6.2.2转移</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-3状态图中的事物及解释"><span class="toc-text">6.3状态图中的事物及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-4状态的可选活动表"><span class="toc-text">6.4状态的可选活动表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-5例子"><span class="toc-text">6.5例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-对象的状态图"><span class="toc-text">(1)对象的状态图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-网上银行登录系统"><span class="toc-text">(2)网上银行登录系统</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#七、活动图"><span class="toc-text">七、活动图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#7-1活动图概要"><span class="toc-text">7.1活动图概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-2活动图事物"><span class="toc-text">7.2活动图事物</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-3活动图关系"><span class="toc-text">7.3活动图关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-4活动图实例"><span class="toc-text">7.4活动图实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-一般的活动图"><span class="toc-text">1.一般的活动图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-带泳道的活动图"><span class="toc-text">2.带泳道的活动图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#八、构件图"><span class="toc-text">八、构件图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#8-1构件图概要"><span class="toc-text">8.1构件图概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-2构件图中的事物及解释"><span class="toc-text">8.2构件图中的事物及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-3构件图中的关系及解释"><span class="toc-text">8.3构件图中的关系及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-4构件图的例子"><span class="toc-text">8.4构件图的例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#实例1"><span class="toc-text">实例1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例2"><span class="toc-text">实例2</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#九、部署图"><span class="toc-text">九、部署图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#9-1部署图概要"><span class="toc-text">9.1部署图概要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-2部署图中的事物及解释"><span class="toc-text">9.2部署图中的事物及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-3部署图中的关系及解释"><span class="toc-text">9.3部署图中的关系及解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-4部署图例子"><span class="toc-text">9.4部署图例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#实例1-1"><span class="toc-text">实例1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例2-1"><span class="toc-text">实例2</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-5关于部署图与构件图"><span class="toc-text">9.5关于部署图与构件图</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#十、附录"><span class="toc-text">十、附录</span></a></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='pure'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+            rel="nofollow"
+          
+          
+          id="home">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+            
+          
+        
+          
+          
+            
+              
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget list'>
+  
+<header class='pure'>
+  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="entry">
+      
+        <li><a class="flat-box" title="https://www.yuque.com/xudongming-2dtnn" href="https://www.yuque.com/xudongming-2dtnn"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;语雀
+          </div>
+          
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="/leafsunshin@163.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="/"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>
+    Use
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    as theme
+    
+      , 
+      total visits
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      times
+    
+    . 
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@20.2/js/backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('') {
+          $('').backstretch(
+          ["https://i.loli.net/2020/02/08/HNuVoted2mUxILl.jpg", "https://i.loli.net/2020/02/08/dNJyR4LHtarTqPu.jpg", "https://i.loli.net/2020/02/08/yXx4GwgZYdi81Qs.jpg", "https://i.loli.net/2020/02/08/RP7JpGvWaCYfuB6.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://i.loli.net/2020/02/08/HNuVoted2mUxILl.jpg", "https://i.loli.net/2020/02/08/dNJyR4LHtarTqPu.jpg", "https://i.loli.net/2020/02/08/yXx4GwgZYdi81Qs.jpg", "https://i.loli.net/2020/02/08/RP7JpGvWaCYfuB6.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
